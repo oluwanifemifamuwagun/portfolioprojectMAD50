@@ -1,0 +1,221 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+  background: #222;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: auto;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 22px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00aaff;
+}
+
+/* HERO ABOUT SECTION */
+.hero-about {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #0066cc, #00aaff);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about-container {
+  max-width: 800px;
+}
+
+.hero-about h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.name {
+  color: #ffe44d;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: white;
+  color: #0077cc;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffd700;
+}
+
+/* GENERAL SECTIONS */
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.gray {
+  background: #eaeaea;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* PROJECTS */
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.project-img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto 15px;
+  display: block;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+/* EXPERIENCE */
+.experience-card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card h3 {
+  margin-bottom: 5px;
+}
+
+.exp-date {
+  color: #0077cc;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* CONTACT */
+#contact p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+#contact a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: #bbb;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero-about h1 {
+    font-size: 2.2rem;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+}
